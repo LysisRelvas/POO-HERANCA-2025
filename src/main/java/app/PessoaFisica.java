@@ -61,13 +61,14 @@ public class PessoaFisica {
     }
     
     public String exibirInformacoes(){
-        DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/mm/yyyy");
-        return  "--- Informações de Pessoa Física ---\n" +
+        DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return "--- Informações de Pessoa Física ---\n" +
                 "Nome: " + this.getNome() + "\n" +
-                "CPF: " + this.getCpf() + "\n" +
                 "Data de Nascimento: " + this.getDataNascimento().format(formatador) +"\n" +
                 "Endereço: " + this.getEndereco() + "\n" +
-                "Data de Cadastro: " + this.getDataCriacao();
+                "CPF: " + this.getCpf() + "\n" +
+                "-----------------------------";
+
     }
 
 }

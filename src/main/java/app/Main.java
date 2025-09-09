@@ -15,10 +15,23 @@ public class Main {
         PessoaFisica pf = new PessoaFisica(
             "Lysis",
             "Rua No Existe, 0",
-            LocalDate.of(2002, Mounth.OCTOBER,23),
+            LocalDate.of(2002, Month.OCTOBER,23),
             "544.558.361-12");
         
+        System.out.println("Peesoa Física criada com sucesso!");
         System.out.println(pf.exibirInformacoes());
+
+        System.out.println("\n\n---Criando Pessoa Jurídica ---");
+
+        PessoaJuridica pj = new PessoaJuridica(
+            "New Analise LTDA",
+            "Rua Zero, 1620",
+            LocalDate.of(2025, Month.SEPTEMBER,22),
+            "Nome fantasia " ,
+            "11.162.016/0001-20");
+
+        System.out.println(pj.exibirInformacoes());
+
 
 
 

@@ -57,4 +57,13 @@ public class PessoaJuridica {
         this.setCnpj(cnpj);
     }
 
+    public String exibirInformacoes(){
+        return "--- Informações de Pessoa Jurídica ---\n" +
+                "Razão Social: " + this.getNome() + "\n" +
+                "Nome Fantasia: " + this.getNomeFantasia() +"\n" +
+                "CNPJ: " + this.getCnpj() + "\n" +
+                "Endereço: " + this.getEndereco() + "\n" +
+                "Data de Criação: " + this.getDataCriacao();
+
+    }
 }
